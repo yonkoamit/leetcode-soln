@@ -13,8 +13,8 @@ class Solution {
 public:
     bool pathSum(TreeNode * root, int targetSum, int paths)
     {
-        if(!root)
-            return 0;
+        if(root==NULL)
+            return false;
         if((!root->left) && (!root->right))
         {
             return ((paths + root->val) == targetSum);
